@@ -121,7 +121,7 @@ resultLimitForHouse x y = (division x y, modulo x y)
 
 main :: IO()
 main = do
-    students <- totalStudents "/home/gabysan/Desktop/Lenguaje de Programacion/H_DP_C1/list.txt"
+    students <- totalStudents "/home/gabysan/Documents/sudgoafs/Programming-Languages/H_DP_C1_H1/list.txt"
     let totalStudentsCount = length students
         (studentsPerHouse, remainder) = resultLimitForHouse totalStudentsCount numberOfConstructors
         initialHouseCount = SchoolHouseCount 0 0 0 0 -- Conteo inicial para cada casa
